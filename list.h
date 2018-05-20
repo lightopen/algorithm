@@ -2,6 +2,7 @@
 
 #ifndef _LIST_H
 
+#define _LIST_H
 
 typedef int ElementType;
 struct  Node;
@@ -10,6 +11,12 @@ typedef PtrToNode List;
 typedef PtrToNode Postion;
 
 
+// 自定义接口
+List MakeEmptyListWithLenght(int length);
+Postion AllocNode();
+
+
+// 以下为书本接口
 List MakeEmpty(List L);
 int IsEmpty(List L);
 int IsLast(Postion P, List L);
@@ -20,15 +27,13 @@ void Insert(ElementType X, List L, Postion P);
 void DeleteList(List L);
 Postion Header(List L);
 Postion First(List L);
-Postion Advance(Postion p);
+Postion Advance(Postion P);
 ElementType Retrieve(Postion P);
+
+
+
+
 
 
 #endif // !_LIST_H
 
-
-struct Node
-{
-	ElementType element;
-	Postion next;
-};
