@@ -4,34 +4,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include "../common.h"
 
 
 #define LENGTH 100000
 #define K 1000
 
-void random_array(int a[], int len)
-{
-	int x, y;
-	
-	srand(time(NULL));
-	for (x = 0; x < len; x++)
-	{
-		a[x] = rand();
-	}
-
-}
-
-
-void print_array(int a[], int len)
-{
-	int x;
-	
-	for (x = 0; x<len; x++)
-	{
-		printf("array[%i]: %i\n", x, a[x]);
-	}
-}
 
 void pop(int i[], int len)
 {

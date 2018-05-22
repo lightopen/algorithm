@@ -2,8 +2,8 @@
 #include "test_list.h"
 
 
-int main()
-{
-	TestListMain();
-	system("pause");
-}
+//int main()
+//{
+//	TestListMain();
+//	system("pause");
+//}
